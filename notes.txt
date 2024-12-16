@@ -1,0 +1,32 @@
+notes on this project
+
+This is a tutorial; this doc is to help me keep track of what I'm doing and why
+
+youtube - traversy media playlist "Learn the MERN Stack"
+playlist begins here: https://www.youtube.com/watch?v=-0exw-9YJBo&list=PLillGF-RfqbbQeVSccR9PGKHzPJSWqcsm&index=1
+current location: same video @ 10:00  
+    https://youtu.be/-0exw-9YJBo?list=PLillGF-RfqbbQeVSccR9PGKHzPJSWqcsm&t=601
+    have just set up and tested server
+
+structure
+- backend
+    for routes, models, controllers
+    server.js is the entry point into the server
+
+- in the root
+    (not the backend folder) is where all the backend dependencies go
+        so node_modules goes here
+
+
+
+ACTIVITY:
+I SETUP
+(all of this stuff is found in the package.json file)
+1. init - github repository ldenneson/mern2412
+2. installed - express dotenv mongoose colors 
+    dotenv - "so that we can have environment variables"
+   installed npm i -D nodemon 
+    nodemon is to watch the server.js file "so we don't have to keep restarting it"
+3. in package.json, under "scripts", replace "start": "echo\"Error: no test specified\" && exit 1" with
+    "start: "node backend/server.js",
+    "server": "nodemon backend/server.js"
